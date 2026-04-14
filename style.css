@@ -16,6 +16,7 @@ body {
 
 /* Header */
 header {
+    font-family: "Sekuya", system-ui;
     position: fixed;
     top: 0;
     width: 100%;
@@ -148,7 +149,7 @@ nav {
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: "Sekuya", system-ui;
     margin-bottom: 10rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -309,7 +310,7 @@ section {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #00d4aa, #00b894, transparent);
+    background: linear-gradient(90deg,#050505, #030303);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -368,6 +369,7 @@ section {
     text-align: center;
     align-items: center;
 }
+
 
 .contact-links {
     text-align: center;
