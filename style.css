@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --cor-aboutProjeto:linear-gradient(135deg, #a8a8a8 0%, #c2c2c2 100%);
+    --geral-links:linear-gradient(90deg, #00d4aa, #00b894)
+}
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Sekuya", system-ui;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
@@ -16,7 +20,6 @@ body {
 
 /* Header */
 header {
-    font-family: "Sekuya", system-ui;
     position: fixed;
     top: 0;
     width: 100%;
@@ -68,8 +71,8 @@ nav {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, #00d4aa, #00b894);
-    transition: width 0.3s ease;
+    background: var(--geral-links);
+    
 }
 
 
@@ -128,19 +131,6 @@ nav {
         radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
     animation: heroFloat 20s ease-in-out infinite;
 }
-
-@keyframes heroFloat {
-
-    0%,
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    50% {
-        transform: scale(1.05) rotate(1deg);
-    }
-}
-
 .hero-content {
     max-width: 800px;
     padding: 0 2rem;
@@ -149,7 +139,6 @@ nav {
 }
 
 .hero h1 {
-    font-family: "Sekuya", system-ui;
     margin-bottom: 10rem;
     animation: fadeInUp 1s ease 0.2s both;
 }
@@ -203,15 +192,17 @@ section {
     margin-bottom: 3rem;
     color: #0a2540;
     position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 /* About */
 .about {
-    background: linear-gradient(135deg, #a8a8a8 0%, #c2c2c2 100%);
+    background: var(--cor-aboutProjeto);
 }
 
 .about-content {
+   
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -272,7 +263,8 @@ section {
 
 /* Projects */
 .projects-section {
-    background: linear-gradient(135deg, #9b9b9b 0%, #c0bfbf 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: var(--cor-aboutProjeto);
     position: relative;
 }
 
@@ -310,7 +302,7 @@ section {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg,#050505, #030303);
+    background: var(--geral-links);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -354,7 +346,7 @@ section {
 }
 
 .project-links a {
-    color: #0eeedb;
+    color: #030303;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -365,7 +357,7 @@ section {
 }
 
 .project-links a:hover {
-    color: #000000;
+    color: #312df8;
     text-align: center;
     align-items: center;
 }
@@ -386,6 +378,7 @@ section {
     padding: 24px;
     position: relative;
     align-items: end;
+    font-family: "Sekuya", system-ui;
 }
 
 .btnlinkedin i {
